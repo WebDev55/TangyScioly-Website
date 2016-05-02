@@ -105,4 +105,4 @@ class Rule(StandardShippedRules):
         return str(self.rule_header) + ": [" + "".join([i + ", " for index, i in enumerate(self.rule_applicants) if index < len(self.rule_applicants) - 1 else i]) + "]"
 
     def applyRule(self, string):
-        pass
+        return self.rule(string)
