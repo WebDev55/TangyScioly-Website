@@ -1,0 +1,18 @@
+#Rules
+{
+ NO_CLOSE:[img]
+}
+
+#Slideshow code
+///INSERT_CLASS = PAGE_CONTENT///
+(div :: class = slideshow_wrapper) [
+    (ul :: id = slideshow) [
+        (li :: id = slideshow_elem_1)[(img :: src = img_1.jpg)[]]
+	(li :: id = slideshow_elem_2)[(img :: src = img_2.jpg)[]]
+	(li :: id = slideshow_elem_3)[(img :: src = img_3.jpg)[]]
+	(li :: id = slideshow_elem_4)[(img :: src = img_4.jpg)[]]
+    ]
+
+    #Slideshow script
+    (script :: src = slideshow.js)[]
+]
